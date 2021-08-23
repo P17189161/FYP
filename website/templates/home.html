@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide-1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide-2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide-3"></button>
+        </div>
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="{{ url_for('static', filename='/images/store.jpg') }}" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Coronavirus Update</h1>
+                    <p>Following the latest Government Guidelines, Badminton training sessions will resume as normal.</p>
+                    <p>Please see your team profile for further updates.</p>
+                    <button type="submit" class="btn btn-primary">COVID Updates</button>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="{{ url_for('static', filename='/images/store.jpg') }}" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Looking For a Team?</h1>
+                    <p>Put your racquets to the test, join one of our teams today
+                        and shuttle cock your way to the top of the league.</p>
+                    <button type="submit" class="btn btn-primary">Join a Team</button>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="{{ url_for('static', filename='/images/store.jpg') }}" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Need some new equipment?</h1>
+                    <p>Check out our store to help in your Badminton Career</p>
+                    <button type="submit" class="btn btn-primary">Shop Now</button>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+
+    </div>
+
+{% endblock %}
